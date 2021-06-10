@@ -1,0 +1,236 @@
+
+.main__div--perfil{
+    width: 80%;
+    box-shadow: 10px 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #373a40;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+  }
+.tarjetas__personajes_guardados{
+    background-color: #373a40;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.69);
+    margin-right: 20px;
+}
+.form__clases_guardados{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.5em;
+}
+.clases_form_guardados{
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 5px;
+}
+.form__clases_guardados>a{
+    text-decoration: none;
+    color:white
+}
+.clases_form_guardados_img{
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+}
+
+.form__clases{
+    height: 100%;
+    justify-content: center;
+}
+.maindiv__botones--perfil{
+    margin:0px
+}
+hr{
+    color: #ffd100;
+    background-color: #ffd100;
+    border: 1px solid #ffd100;
+    width: 80%;
+}
+.maindiv__botones--perfil{
+    width: 40%;
+    display:flex;
+    flex-direction: row;
+    align-items: left;
+    margin: 0px;
+    margin-bottom: 3%;
+    justify-content: space-between;
+  }
+.charcreation__error{
+    color: #ff3737;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+  }
+.clases_input_anadir{
+    width: 80%;
+    height: 20px;
+}
+
+.charcreation_label{
+    font-size: 2rem;
+    margin-top: 10px;
+}
+.tarjetas__personajes_guardar{
+    background-color: #373a40;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.69);
+    margin-right: 20px;
+}
+.form__charcreation{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5em;
+}
+.form__charcreation>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.form__charcreation>button{
+    text-decoration: none;
+    padding: 5%;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #373a40;
+    background-color: #ffd100;
+    box-shadow: 10px 10px 6px 0 rgba(0, 0, 0, 0.16);
+    margin-bottom: 2%;
+    margin-top: 2%;
+    border:0px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+.form__charcreation>button:hover{
+    background-color:#ffe46d;
+    cursor: pointer;
+}
+
+.h1__characters{
+    margin-bottom: 20px;
+    font-size: 2.6rem;
+}
+.Druid{
+    color:#FF7C0A;
+    text-shadow: black 1px 1px 1px;
+}
+.Paladin{
+    color:#F48CBA;
+    text-shadow: black 1px 1px 1px;
+}
+.Death.Knight{
+    color:#C41E3A;
+    text-shadow: black 1px 1px 1px;
+}
+.Demon.Hunter{
+    color:#A330C9;
+    text-shadow: black 1px 1px 1px;
+}
+.Hunter{
+    color:#AAD372;
+    text-shadow: black 1px 1px 1px;
+}
+.Mage{
+    color:#3FC7EB;
+    text-shadow: black 1px 1px 1px;
+}
+.Monk{
+    color:#00FF98 ;
+    text-shadow: black 1px 1px 1px;
+}
+.Priest{
+    color: #FFFFFF;
+    text-shadow: black 1px 1px 1px;
+}
+.Rogue{
+    color:#FFF468;
+    text-shadow: black 1px 1px 1px;
+}
+.Shaman{
+    color:#0070DD ;
+    text-shadow: black 1px 1px 1px;
+}
+.Warlock{
+    color:#8788EE ;
+    text-shadow: black 1px 1px 1px;
+}
+.Warrior{
+    color: #C69B6D;
+    text-shadow: black 1px 1px 1px;
+}
+.main__div--perfil{
+    min-height: 565px;
+}
+.img_error{
+    width: 100%;
+    image-rendering: -webkit-optimize-contrast;
+
+}
+.boton__nologin{
+    text-decoration: none;
+    padding: 2%;
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: #373a40;
+    background-color: #ffd100;
+    box-shadow: 10px 10px 6px 0 rgba(0, 0, 0, 0.16);
+    margin-bottom: 2%;
+    margin-top: 2%;
+    border:none;
+}
+.boton__nologin:hover{
+    background-color:#ffe46d;
+    cursor: pointer;
+  }
+.p__nologin{
+    margin-top: 2%;
+    text-align: center;
+    font-size: 1.8em;
+}
+@media(max-width:600px){
+    .h1__characters{
+        font-size: 2rem;
+    }
+    .tarjetas__personajes_guardados{
+        width: 280px;
+        margin-right: 0px;
+    }
+    .tarjetas__personajes_guardar{
+        width: 280px;
+        margin-right: 0px;
+    }
+}
+@media(max-width:460px){
+    .h1__characters{
+        display: none;
+    }
+    .tarjetas__personajes_guardados{
+        width: 270px;
+        margin-right: 0px;
+    }
+    .tarjetas__personajes_guardar{
+        margin-top: 20px;
+        width: 270px;
+        margin-right: 0px;
+    }
+}
+@media(max-width:950px){
+
+    .main__div--perfil{
+      width: 100%;
+    }
+    .main__contenedortarjetas{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+}

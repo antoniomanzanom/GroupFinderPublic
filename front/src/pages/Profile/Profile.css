@@ -1,0 +1,162 @@
+.body__main__perfil{
+    background-color: #242424;
+    display:flex;
+    justify-content: center;
+    padding:0px;  
+    }
+.main__div__perfil{
+    width: 80%;
+    box-shadow: 10px 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #373a40;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    }
+.logout_button{
+    text-decoration: none;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: white;
+    background-color: #ff0825;
+    box-shadow: 10px 10px 6px 0 rgba(0, 0, 0, 0.16);
+    margin-bottom: 15%;
+    margin-top: 20px;
+    border:none;
+}
+.logout_button:hover{
+    background-color: #f53148;
+    cursor: pointer;
+}
+.profile_pic{
+    border-radius: 50px;
+    border-color: #ffd100;
+    border-width: 2px;
+    border-style: solid;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.perfil{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+.pefil>p{
+    font-size: 300px;
+}
+.perfil__texto{
+    font-size: 2em;
+    padding: 20px;
+}
+.h1_perfil{
+    padding: 20px;
+    font-size: 2.8rem;
+    
+}
+.battletag_div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.div_infouser{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div_img_gnomo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.div_img_gnomo>img{
+    width: 100%;
+    height: 100%;
+    max-height: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.editbutton{
+    text-decoration: none;
+    border: none;
+    background-color: #373a40;
+    color: #ffd100;
+    height: 10px;
+    width: 20px;
+}
+.boton__guardar__cambios{
+    padding-right:10px ;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-decoration: none;
+    border: none;
+    background-color: #ffd100;
+    color: #373a40;
+    margin-left: 5px;
+}
+.perfil__texto__Battletag{
+    font-size: 2em;
+    padding:10px;
+}
+.battletag_div>input{
+    border:none;
+    height: 20px;
+}
+.perfil__texto__username{
+    font-size: 3.8em;
+    padding: 20px;
+}
+@media(max-width:700px){
+    .div_img_gnomo{
+        display: none;
+        
+    }
+    .div_img_gnomo>img{
+        display: none;
+    }
+    .div_infouser{
+        width: 100%;
+    }
+    .profile_pic{
+        margin-left: 0px;
+    }
+    .h1_perfil{
+        font-size: 2.5rem;
+    }
+    .profile_pic{
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+    .perfil__texto__username{
+        font-size: 3.5em;
+    }
+    .perfil__texto{
+        font-size: 1.7em;
+    }
+    .perfil__texto__Battletag{
+        font-size: 1.7em;
+    }
+}
+@media (max-width: 950px){
+    .body__main__perfil {
+        width: 100%;
+        height: 84vh;
+    }
+    .main__div__perfil{
+        width: 100%;
+    }
+    
+
+}
+
+

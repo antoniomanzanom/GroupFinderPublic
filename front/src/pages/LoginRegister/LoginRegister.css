@@ -1,0 +1,203 @@
+
+.contenedores_login{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.main__contenedor_izquierda_login{
+    height: 600px;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.5em;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.69);
+}
+.main__contenedor_izquierda_login>h2{
+    padding: 30px;
+    font-size: 2.9rem;
+}
+.logintext{
+    font-size: 1.7rem;
+    margin-top: 10px;
+}
+.div__forms{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.5em;
+    width: 100%;
+}
+.forms{
+    width: 100%;
+}
+.form__inputtext_login{
+    width: 200px;
+    height: 17px;
+}
+.main__contenedor_derecha_login{
+    height: 600px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.5em;
+}
+.main__contenedor_derecha_login>h2{
+    padding: 30px;
+    font-size: 2.9rem;
+}
+.form__inputtext_login1{
+    width: 200px;
+    height: 17px;
+    margin-bottom: 10px;
+}
+.logintext1{
+    margin-top:50px;
+    font-size: 1.7rem;
+}
+.boton_login{
+    text-decoration: none;
+    padding: 2%;
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: #373a40;
+    background-color: #ffd100;
+    box-shadow: 10px 10px 6px 0 rgba(0, 0, 0, 0.16);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.boton_login:hover{
+    cursor: pointer;
+    background-color: #ffe46d;
+}
+.forms_register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+.main__contenedor_derecha_login:hover{
+    width: 90%;
+    transition: 0.5s;
+    
+}
+.main__contenedor_derecha_login:not(:hover){
+    width: 50%;
+    transition: 0.5s;
+    
+}
+.main__contenedor_izquierda_login:hover{
+    width: 90%;
+    transition: 0.5s;
+}
+.main__contenedor_izquierda_login:not(:hover){
+    width: 50%;
+    transition: 0.5s;
+    
+}
+.errorRegister{
+    color:red;
+    margin-top: 20px;
+}
+.link__verification{
+    text-decoration: none;
+    color:#ffd100;
+}
+.link__verification:hover{
+    color:#ffe46d
+}
+@media(max-width:776px){
+    .main__contenedor_derecha_login:hover{
+        width: 70%;
+        transition: 0.5s;
+        
+    }
+    .main__contenedor_derecha_login:not(:hover){
+        width: 50%;
+        transition: 0.5s;
+        
+    }
+    .main__contenedor_izquierda_login:hover{
+        width: 70%;
+        transition: 0.5s;
+    }
+    .main__contenedor_izquierda_login:not(:hover){
+        width: 50%;
+        transition: 0.5s;
+        
+    }
+}
+@media(max-width:680px){
+    .main__contenedor_derecha_login:hover{
+        width: 60%;
+        transition: 0.5s;
+        
+    }
+    .main__contenedor_derecha_login:not(:hover){
+        width: 50%;
+        transition: 0.5s;
+        
+    }
+    .main__contenedor_izquierda_login:hover{
+        width: 60%;
+        transition: 0.5s;
+    }
+    .main__contenedor_izquierda_login:not(:hover){
+        width: 50%;
+        transition: 0.5s;
+        
+    }
+}
+@media(max-width:590px){
+    .main__contenedor_derecha_login:hover{
+        width: 50%;
+        transition: 0.5s;
+        
+    }
+    .main__contenedor_derecha_login:not(:hover){
+        width: 50%;
+        transition: 0.5s;
+        
+    }
+    .main__contenedor_izquierda_login:hover{
+        width: 50%;
+        transition: 0.5s;
+    }
+    .main__contenedor_izquierda_login:not(:hover){
+        width: 50%;
+        transition: 0.5s;
+        
+    }
+}
+@media(max-width:560px){
+    .main__contenedor_derecha_login:hover{
+        width: 100%;
+        
+        
+    }
+    .main__contenedor_derecha_login:not(:hover){
+        width: 100%;
+    }
+    .main__contenedor_izquierda_login:hover{
+        width: 100%;
+    }
+    .main__contenedor_izquierda_login:not(:hover){
+        width: 100%;
+        
+    }
+    .contenedores_login{
+        flex-direction: column;
+    }
+    .main__contenedor_izquierda_login{
+        width: 100%;
+    }
+    .main__contenedor_derecha_login{
+        width: 100%;
+    }
+}

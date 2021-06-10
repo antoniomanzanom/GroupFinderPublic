@@ -1,0 +1,127 @@
+.body__main__gf{
+    background-color: #242424;
+    display:flex;
+    justify-content: center;
+    padding:0px;
+    
+    }
+.main__div__gf{
+      width: 80%;
+      box-shadow: 10px 3px 6px 0 rgba(0, 0, 0, 0.16);
+      background-color: #373a40;
+      display:flex;
+      align-items: center;
+      flex-direction: column;
+    }
+.tablagrupos{
+    width: 90%;
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 30px;
+    box-shadow: 2px 5px 7px 5px rgba(0,0,0,0.16);
+    table-layout: fixed;
+}
+.div__tablagrupos{
+    width: 100%;
+}
+.nombretd{
+    width: 15%;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.descripciontd{
+    width: 20%;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.mazmorratd{
+    width: 20%;
+    overflow: hidden;
+    
+}
+.dificultadtd{
+    width: 10%;
+    
+}
+.rolestd{
+    width: 25%;
+}
+.botontd{
+    width: auto;
+}
+.p__nogroups{
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.boton__tabla__gf{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #373a40;
+    background-color: #ffd100;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    padding: 5%;
+    border: none;
+}
+.boton__tabla__gf:hover{
+    background-color: #ffe46d;
+    cursor: pointer;
+}
+@media(max-width:950px){
+    .tablagrupos{
+        width: 95%;
+        margin-top: 30px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    .main__div__gf{
+        width: 100%;
+    }
+    .main__div{
+        width: 100%;
+    }
+    .body__footer{
+        display: none;
+    } 
+    .mazmorratd{
+        overflow: hidden;
+    }
+}
+@media(max-width:575px){
+    .tablagrupos{
+        width: 97%;
+        margin-top: 30px;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+    }
+    .boton__tabla__gf{
+        margin-right: 10px;
+    }
+    .nombretd{
+        padding-left: 5px;
+    }
+    .descripciontd{
+        padding-left: 5px;
+        display: none;
+    }
+    .mazmorratd{
+        overflow: hidden;
+    }
+}
+@media(max-width:400px){
+    .mazmorratd{
+        overflow: hidden;
+    }
+    .dificultadtd{
+        overflow: hidden;
+    }
+}
+
+
+

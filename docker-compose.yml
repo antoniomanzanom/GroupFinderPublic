@@ -1,0 +1,36 @@
+version: "3.7"
+
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=groupfinder
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=root
+    ports:
+      - 5432:5432
+  web:
+    build: ./backendGit/
+    command: python app.py
+    volumes:
+      - ./backendGit:/code
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+
+  adminer:
+    image: adminer
+    ports:
+      - 8080:8080
+      
+  front:
+    build: ./front/
+    volumes:
+      - ./front:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - web
+    
+

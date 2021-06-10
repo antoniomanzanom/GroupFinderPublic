@@ -1,0 +1,359 @@
+.main__contenedor_izquierda{
+    height: 500px;
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenedores{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.clases_form_label{
+    font-size: 1.9em;
+    margin-top: 15px;
+    font-weight: 600;
+}
+.clases_form_select{
+    width: 35%;
+
+}
+.groupCreation__main__div{
+    width: 80%;
+    box-shadow: 10px 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #373a40;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.clases_form_input{
+    width: 35%;
+}
+.clases_form_textarea{
+    width: 35%;
+    height: 15%;
+}
+.clases_form_p{
+    font-size: 1.4em;
+}
+.h1_groupcreation{
+    padding: 20px;
+    font-size: 2.6rem;
+}
+.boton__guardar__grupo{
+    text-decoration: none;
+    padding: 2%;
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: #373a40;
+    background-color: #ffd100;
+    box-shadow: 10px 10px 6px 0 rgba(0, 0, 0, 0.16);
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 35%;
+}
+.boton__guardar__grupo:hover{
+    background-color: #ffe46d;
+    cursor: pointer;
+}
+.main__contenedor_derecha{
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tablagrupo{
+    width: 85%;
+    margin-top: 10px;
+    box-shadow: 2px 5px 7px 5px rgba(0,0,0,0.16);
+    margin-bottom: 20px;
+    table-layout: fixed;
+}
+thead{
+    font-size: 1.6rem;
+    
+}
+tbody{
+    font-size: 1.4rem;
+}
+td{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+td>img{
+    height: 25px;
+    width: 25px;
+}
+.boton__tabla{
+    text-decoration: none;
+    padding: 5%;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #373a40;
+    background-color: #ffd100;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 80%;
+    border: none;
+}
+.boton__tabla:hover{
+    background-color: #ffe46d;
+    cursor: pointer;
+}
+.tablacandidatos{
+    width: 100%;
+    padding: 0;
+    table-layout: fixed;
+}
+.clases_form_label_candidatos{
+    font-size: 2.6em;
+    margin-left: 15px;
+}
+.creaciondegrupo{
+    font-size: 2.6em;
+    margin-bottom: 30px;
+}
+.tablascroll{
+    overflow: scroll;
+    height: 330px;
+    width: 85%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    box-shadow: 2px 5px 7px 5px rgba(0,0,0,0.16);
+    
+}
+.tablascroll::-webkit-scrollbar{
+    width: 3px;
+}
+.tablascroll::-webkit-scrollbar-thumb{
+    background-color: #ffd100;
+    border-radius: 3px;
+    width: 1px;
+}
+.tablascroll::-webkit-scrollbar-corner{
+    visibility: hidden;
+}
+.errorPersonajes{
+    font-size: 1.6em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color:red;
+}
+.ancho{
+    width: 100%;
+}
+.infogrupo{
+    font-size: 1.6em;
+    max-width: 100%;
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+}
+.infogrupo_izquierda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 5px 7px 5px rgba(0,0,0,0.16);
+    padding: 40px;
+}
+.boton_abandonar_grupo{
+    text-decoration: none;
+    padding: 7%;
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: white;
+    background-color: #ff0825;
+    box-shadow: 10px 10px 6px 0 rgba(0, 0, 0, 0.16);
+    margin-bottom: 2%;
+    margin-top: 20px;
+    border:none;
+}
+.boton_abandonar_grupo:hover{
+    background-color: #f53148;
+    cursor: pointer;
+}
+.primerTd{
+    width: 30%;
+    overflow: hidden;
+    
+}
+.segundoTd{
+    width: 10%;
+    overflow: hidden;
+}
+.tercerTd{
+    width: 20%;
+    overflow: hidden;
+}
+.cuartoTd{
+    width: 20%;
+    overflow: hidden;
+}
+.quintoTd{
+    width: 20%;
+    overflow: hidden;
+}
+.cola{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.boton__tabla_cola{
+    text-decoration: none;
+    padding: 5%;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: white;
+    background-color: #ffd100;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 45%;
+    border: none;
+}
+.verde{
+    background-color: #27a027;
+}
+.verdeDisabled{
+    background-color: #6c996c;
+}
+.rojo{
+    background-color: #ff0825;
+}
+.rojoDisabled{
+    background-color: #da727e;
+}
+.rojo:hover{
+    background-color: #f53148;
+    cursor: pointer;
+}
+.verde:hover{
+    background-color:#5cb85c;
+    cursor: pointer;
+}
+.boton__reload{
+
+    font-size: 1.4rem;
+    color: #ffd100;
+    width: 20%;
+    border: none;
+    
+}
+.disabled{
+    background-color:#fde9a2;
+}
+.disabled:hover{
+    background-color:#fde9a2;
+    cursor: auto;
+}
+@media (max-width: 950px){
+    .groupCreation__main__div {
+        width: 100%;
+    }
+    .main__div__perfil{
+        width: 100%;
+    }
+
+}
+@media (max-width: 600px){
+    .clases_form_input{
+        width: 40%;
+    }
+    .clases_form_select{
+        width: 40%;
+    }
+    .clases_form_textarea{
+        width: 40%;
+    }
+}
+@media (max-width: 425px){
+    .clases_form_input{
+        width: 168px;
+    }
+    .clases_form_select{
+        width: 168px;
+    }
+    .clases_form_textarea{
+        width: 168px;
+    }
+}
+@media(max-width:1640px){
+    .infogrupo_izquierda{
+        margin-left: 30px;
+    }
+}
+
+@media(max-width:1500px){
+    .contenedores{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__contenedor_derecha{
+        width: 90%;
+        
+    }
+    .main__contenedor_derecha .clases_form_label_candidatos{
+        text-align: center;
+    }
+    .clases_form_label_candidatos{
+        margin-top: 30px;
+    }
+    .tablagrupo{
+        width: 100%;
+    }
+    .tablascroll{
+        width: 100%;
+    }
+}
+@media(max-width:600px){
+    .infogrupo_izquierda{
+        padding:0px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        
+    }
+    .infogrupo{
+        overflow: hidden;
+        max-width: 80%;
+    }
+}
+@media(max-width:400px){
+    .main__contenedor_derecha{
+        width: 95%;
+        
+    }
+    .main__contenedor_izquierda{
+        width: 100%;
+    }
+    .infogrupo_izquierda{
+        padding:0px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .infogrupo_izquierda{
+        width: 100%;
+    }
+    .primerTd{
+        font-size: 1.4rem;
+        
+    }
+    .segundoTd{
+        font-size: 1.4rem;
+    }
+    .tercerTd{
+        font-size: 1.4rem;
+    }
+    .cuartoTd{
+        font-size: 1.4rem;
+    }
+    .quintoTd{
+        font-size: 1.4rem;
+    }
+}
