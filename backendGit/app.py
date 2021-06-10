@@ -88,4 +88,4 @@ api.add_resource(UserUpdateBattletag,'/user/battletag/<int:user_id>')
 if __name__ == '__main__':
     from db import db
     db.init_app(app)
-    app.run(port=5000, debug=True,host='0.0.0.0')
+    app.run(port=5000, host='0.0.0.0' ,debug=True)

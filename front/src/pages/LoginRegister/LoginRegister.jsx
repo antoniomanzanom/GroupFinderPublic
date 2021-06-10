@@ -9,7 +9,6 @@ const LoginRegister = (props) => {
     const [battletag, setBattletag] = useState("")
     const [password, setPassword] = useState("")
     const [password2, setPassword2] = useState("")
-    const [roletype, setRoletype] = useState("user")
     const [usernameLogin, setUsernameLogin] = useState("")
     const [passwordLogin, setPasswordLogin] = useState("")
     const [errorRegister, setErrorRegister] = useState(null)
@@ -18,6 +17,7 @@ const LoginRegister = (props) => {
 
     useEffect(() => {
         props.setPage("login-register")
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const userRegister= async(e)=>{
@@ -45,7 +45,7 @@ const LoginRegister = (props) => {
                 email: email,
                 battletag:battletag,
                 password:password,
-                role_type:roletype
+                role_type:"user"
               }),
         })
         console.log(await res.json())

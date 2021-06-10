@@ -3,7 +3,7 @@ import "./groupCreation.css"
 import { useState,useEffect} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faTimes,faSync } from '@fortawesome/free-solid-svg-icons'
-import { Link, Redirect } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useHistory } from "react-router-dom";
 
 
@@ -20,7 +20,7 @@ const GroupCreation = (props) => {
     const [characterListCola,setCharacterListCola] = useState([])
     const [tamano,setTamano] = useState("main__contenedor_izquierda")
     const [numero,setNumero] = useState(1)
-    var access_token= window.localStorage.getItem('access_token')
+
     var user_id = window.localStorage.getItem('user_id')
     var group_id = window.localStorage.getItem('group_id')
     var liderDeGrupo = window.localStorage.getItem('liderDeGrupo')
@@ -34,10 +34,11 @@ const GroupCreation = (props) => {
             cargarInfoGrupo()
             cargarPersonajesCola()
             setTamano("main__contenedor_izquierda")
-            console.log(liderDeGrupo)
+            
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[numero])
-
+    
     const cargarPersonajes= async () => {
         const res = await fetch("http://127.0.0.1:5000/characters/"+user_id,{
                 method:"GET",
@@ -108,12 +109,11 @@ const GroupCreation = (props) => {
                 character_name:character_name,
               }),
         })
-        console.log(character_name)
-        console.log(res)
+
         const data = await res.json()
-        console.log(data)
+
         if(res.status===200){
-            
+            console.log(data.group_id)
             localStorage.setItem('group_id',data.group_id)
             localStorage.setItem('liderDeGrupo',true)
             group_id=data.group_id
@@ -136,6 +136,7 @@ const GroupCreation = (props) => {
     const echarPersona = async (delete_id) => {
 
         if(delete_id == user_id){
+            
             abandonarGrupo()
             return
         }
@@ -339,11 +340,13 @@ const GroupCreation = (props) => {
                         <div className="tablascroll">
                         <table id="tablacandidatos" className="tablacandidatos">
                             <thead>
+                                <tr>
                                 <th className="primerTd ">Nombre y reino</th>
                                 <th className="segundoTd">Elo</th>
                                 <th className="tercerTd">Rol</th>
                                 <th className="cuartoTd">Battletag</th>
-                                <th className="quintoTd" className="boton__reload" onClick={()=>setNumero(numero+1)}><FontAwesomeIcon icon={faSync}></FontAwesomeIcon></th>
+                                <th className="boton__reload" onClick={()=>setNumero(numero+1)}><FontAwesomeIcon icon={faSync}></FontAwesomeIcon></th>
+                                </tr>
                             </thead>
                         <tbody>
                         {characterListCola.map((character,key)=>

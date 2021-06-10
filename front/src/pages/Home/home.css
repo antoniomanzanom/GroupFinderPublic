@@ -430,7 +430,7 @@
       display: flex;
       flex-direction: column;
       align-items:center;
-      justify-content: start;
+      justify-content: flex-start;
     }
     .maindiv__h1{
       text-align: center;

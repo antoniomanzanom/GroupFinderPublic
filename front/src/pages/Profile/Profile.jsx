@@ -16,10 +16,11 @@ const Profile = (props) => {
     const [error,setError] = useState("")
     let history = useHistory();
 
-    useEffect(async() => {
+    useEffect(() => {
         props.setPage("perfil")
         UserLoad()
         cargarPersonajes()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [numero])
     
     const UserLoad =async ()=>{
@@ -94,11 +95,11 @@ const Profile = (props) => {
                     <div className="div_infouser">
                     <h1 className="h1_perfil">Perfil del usuario</h1>
                         {characterList.length===0 ?
-                            <img src="./img/default.jpg" className="profile_pic"></img>
+                            <img src="./img/default.jpg" className="profile_pic" alt="imagen de usuario"></img>
                             
                             :
                             
-                            <img src={characterList[0].img_url} className="profile_pic"></img>
+                            <img src={characterList[0].img_url} className="profile_pic" alt="imagen de usuario"></img>
 
 
                         }

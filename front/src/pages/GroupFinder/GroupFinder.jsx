@@ -17,6 +17,7 @@ const GroupFinder = (props) => {
         props.setPage("Groupfinder")
         cargarPersonajes()
         cargarGrupos()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [numero])
 
     const cargarPersonajes= async () => {
@@ -82,7 +83,7 @@ const GroupFinder = (props) => {
 
                         <>
                             <label htmlFor="personaje" className="clases_form_label">Selecciona tu personaje</label>
-                            <select id="personaje" className="clases_form_select" onChange={(e) => setCharacter_name(e.target.value)} value={character_name} defaultValue={characterList[0].name}>
+                            <select id="personaje" className="clases_form_select" onChange={(e) => setCharacter_name(e.target.value)} defaultValue={characterList[0].name}>
                             {characterList.map((character,key)=>
                                 <option value={character.name} key = {key}>{character.name+"-"+character.realm}</option>
                                 )
@@ -121,11 +122,11 @@ const GroupFinder = (props) => {
                                         <td className="rolestd">
                                             {group.roles.split(",").length===1 ? 
                                             
-                                                <img src={"./img/"+group.roles+".png"}></img>
+                                                <img src={"./img/"+group.roles+".png"} alt="rol del personaje"></img>
                                             :
                                             
                                                 group.roles.split(",").map((rol)=>
-                                                    <img src={"./img/"+rol+".png"}></img>
+                                                    <img src={"./img/"+rol+".png"} alt="rol del personaje"></img>
                                                 )
                                             
                                             }

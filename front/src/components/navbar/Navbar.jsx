@@ -2,7 +2,7 @@ import React,{useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import "./navbar.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars,faEllipsisV } from '@fortawesome/free-solid-svg-icons'
+import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = (props) => {
 
@@ -45,9 +45,9 @@ const Navbar = (props) => {
                 <Link to="/" className="header__link"><img src="./img/logo.png" alt="" className="link__image"></img></Link>
                 <p className="header__parrafo">GroupFinder.io</p>
                 
-                <Link className="icon" onClick={menu}>                   
+                <button className="icon" onClick={menu}>                   
                         <span  className="fa fa-bars hamburguesa"><FontAwesomeIcon icon={faEllipsisV}></FontAwesomeIcon>{/*Menú*/}</span>                 
-                </Link>
+                </button>
             </div>
             <nav className="header__nav" id="headernav">
                 <ul className="lista__nav">

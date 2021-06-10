@@ -122,6 +122,7 @@ class DeleteOfGroup(Resource):
                     newrol=','.join(listaroles)
                     group.roles=newrol
             user.status="DENIED"
+            user.group_id=None
             db.session.commit()
             return {"message":"User deleted from queue correctly"},200
 

@@ -1,8 +1,8 @@
 import React, { useState,useEffect } from 'react'
 import "./personajes.css"
 import { Link } from 'react-router-dom'
-import { useHistory } from "react-router-dom";
-import { Redirect } from "react-router-dom";
+
+
 
 const Personajes = (props) => {
     const [personajes, setPersonajes] = useState([])
@@ -10,29 +10,29 @@ const Personajes = (props) => {
     const [name, setName] = useState("")
     const [realm,setRealm] = useState("")
     const [error, setError] = useState("")
-    let history = useHistory();
 
-    var access_token= window.localStorage.getItem('access_token')
+
     var user_id = window.localStorage.getItem('user_id')
 
     useEffect(() => {
         props.setPage("Personajes")
-        const cargarpersonajes= async()=>{
-            const res = await fetch("http://127.0.0.1:5000/characters/"+user_id,{
-                method:"GET",
-                headers: {
-                    "Content-type": "application/json",
-                  }
-            })
-            const data = await res.json();
-            console.log(data)
-            setPersonajes(data.characters)
-        }
+        
         cargarpersonajes()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
 
     }, [numero])
 
-
+    const cargarpersonajes= async()=>{
+        const res = await fetch("http://127.0.0.1:5000/characters/"+user_id,{
+            method:"GET",
+            headers: {
+                "Content-type": "application/json",
+              }
+        })
+        const data = await res.json();
+        console.log(data)
+        setPersonajes(data.characters)
+    }
     const anadirPersonaje= async(e)=>{
         e.preventDefault();
         const res = await fetch("http://127.0.0.1:5000/character/register/"+user_id,{

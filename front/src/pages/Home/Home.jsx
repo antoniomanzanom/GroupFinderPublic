@@ -4,11 +4,9 @@ import { Link } from 'react-router-dom'
 
 const Home = (props) => {
 
-    const lightmode=()=>{
-
-    }
     useEffect(() => {
         props.setPage("Inicio")
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     
     return (
