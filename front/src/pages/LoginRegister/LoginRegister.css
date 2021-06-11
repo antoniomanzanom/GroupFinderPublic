@@ -37,6 +37,9 @@
 .form__inputtext_login{
     width: 200px;
     height: 17px;
+    padding: 3px 7px;
+}.form__inputtext_login1{
+    padding: 3px 7px;
 }
 .main__contenedor_derecha_login{
     height: 600px;

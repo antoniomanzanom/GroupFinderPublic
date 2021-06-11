@@ -19,7 +19,7 @@
 }
 .clases_form_select{
     width: 35%;
-
+    padding: 3px 7px;
 }
 .groupCreation__main__div{
     width: 80%;
@@ -31,6 +31,7 @@
 }
 .clases_form_input{
     width: 35%;
+    padding: 3px 7px;
 }
 .clases_form_textarea{
     width: 35%;
